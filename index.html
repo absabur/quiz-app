@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- =====================================
+    Font awesome cdn
+    ====================================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="main">
+        <!-- =====================================
+        App container section starts here
+        ====================================== -->
+
+        <div class="app-container">
+            <div class="img">
+                <img src="images/quiz1.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Play Quiz With Fixed Time Duration.</h3>
+                <p>The subject of the quiz is HTML, CSS and JavaScript. Prove your self that you had a great knolodge on this topic.</p>
+                <!-- <h3>Quiz</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.  </p> -->
+            </div>
+            <div class="button">
+                <span></span>
+                <button id="page-1-btn" class="btn-right">
+                    Next
+                </button>
+            </div>
+        </div>
+
+        <!-- =====================================
+        App container section ends here
+        ====================================== -->
+
+        <!-- =====================================
+        Ruls container section starts here
+        ====================================== -->
+
+        <div class="start-container">
+            <div class="heading">
+                <h4>Quiz ruls and condition.</h4>
+            </div>
+            <div class="ruls">
+                <ol>
+                    <li>
+                        You have only 15 seconds per question.
+                    </li>
+                    <li>
+                        Once you select your answer, it can't be undone.
+                    </li>
+                    <li>
+                        Every Question contains one mark.
+                    </li>
+                    <li>
+                        You can't select any option after Time up.
+                    </li>
+                    <li>
+                        Time up contains wrong answer.
+                    </li>
+                    <li>
+                         You can't exit from the Quiz while you're playing.
+                    </li>
+                    <li>
+                        You'll get points on the basis of your correct answer.
+                    </li>
+                </ol>
+            </div>
+            <div class="button">
+                <button id="exit-button" class="btn-left">
+                    Exit Quiz
+                </button>
+                <button id="continue-button" class="btn-right">
+                    Start
+                </button>
+            </div>
+        </div>
+
+        <!-- =====================================
+        Ruls container section ends here
+        ====================================== -->
+
+        <!-- =====================================
+        Quiz container section starts here
+        ====================================== -->
+
+        <div class="quiz-container">
+            <div class="question-heading">
+                <div class="title">Start exam</div>
+                <div class="time-count">
+                    <div class="time-left">Time Left</div>
+                    <div class="seconds">15</div>
+                </div>
+                <div class="time-line"></div>
+            </div>
+            
+            <div class="body">
+                <div class="question">
+                    <!-- <span>1. This is a question?</span> -->
+                </div>
+                <div class="options">
+                    <div class="option">
+                        <!-- <span>Lorem ipsum dolor sit.</span><i class="fa-regular fa-circle-check"></i> -->
+                    </div>
+                    <div class="option">
+                        <!-- <span>Lorem ipsum dolor sit.</span><i class="fa-sharp fa-solid fa-circle-xmark"></i> -->
+                    </div>
+                    <div class="option">
+                        <!-- <span>Lorem ipsum dolor sit.</span><i class="fa-sharp fa-solid fa-circle-xmark"></i> -->
+                    </div>
+                    <div class="option">
+                        <!-- <span>Lorem ipsum dolor sit.</span><i class="fa-sharp fa-solid fa-circle-xmark"></i> -->
+                    </div>
+                    
+                </div>
+                <p class="time-up"></p>
+            </div>
+            
+            <div class="button">
+                <span class="remain">
+                    <!-- 1 of 5 question -->
+                </span>
+                <button id="next-question" class="btn-right">
+                    Next Question
+                </button>
+            </div>
+        </div>
+
+        <!-- =====================================
+        Quiz container section ends here
+        ====================================== -->
+
+        <!-- =====================================
+        Result container section starts here
+        ====================================== -->
+        <div class="result-container">
+            <div class="img">
+                
+            </div>
+            <div class="text">
+                <h3></h3>
+                <div class="bars">
+                    <div class="total-correct"></div>
+                    <div class="total-wrong"></div>
+                </div>
+                <div class="parcent">
+                    <div class="cor-par"></div>
+                    <div class="wro-par"></div>
+                </div>
+                <p class="result">
+                    
+                </p>
+            </div>
+            <div class="button">
+                <button class="btn-left">
+                    play again
+                </button>
+                <button class="btn-right">
+                    Exit Quiz
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- =====================================
+    Results container section starts here
+    ====================================== -->
+
+
+    <script src="index.js"></script>
+    <script src="question.js"></script>
+</body>
+</html>
