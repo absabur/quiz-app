@@ -260,7 +260,7 @@ ol li{
 }
 @media screen and (max-width:520px){
     .app-container , .quiz-container, .start-container , .result-container{
-        margin-top: 50px;
+        margin-top: 30px;
         width: 100%;
         height: 100%;
     }
