@@ -75,6 +75,9 @@ lastButton[0].addEventListener("click",() => {
     resultContainer.style.display = "none";
     nextQuestion.innerHTML = "Next Ques";
     timeCount.textContent = "15";
+    clearInterval(counter);
+    clearInterval(counterLine);
+    startTimer(14);
     showQuesion(0);
     timerLine(0);
 })
